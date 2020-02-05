@@ -1,22 +1,42 @@
-class zoo_goods:
+class pet_goods:
     def __init__(self, name_of_shop):
         self.name_of_shop = name_of_shop
 
     def display_info(self):
         print("Зоомагазин", self.name_of_shop)
 
-
-class zoo_animals(zoo_goods):
+class pet_animals(pet_goods):
     def __init__(self, kind_of_animals):
         self.kind_of_animals=kind_of_animals
+        
+class pet_cats(pet_animals):
+    def __init__(self, name_of_cats_breeds):
+        self.name_of_cats_breeds=name_of_cats_breeds
 
-    def breed(self,name_breed):
-        print(self.kind_of_animals, "породы", name_breed)
+class pet_dogs(pet_animals):
+    def __init__(self, name_of_dogs_breeds):
+        self.name_of_dogs_breeds=name_of_dogs_breeds
 
+class pet_birds(pet_animals):
+    def __init__(self, name_of_birds_breeds):
+        self.name_of_birds_breeds=name_of_birds_breeds
 
-class zoo_items(zoo_goods):
+class pet_rodents(pet_animals):
+    def __init__(self, name_of_rodents_breeds):
+        self.name_of_rodents_breeds=name_of_rodents_breeds
+
+class pet_items(pet_goods):
     def __init__(self, kind_of_items):
         self.kind_of_items=kind_of_items
 
-    def amount(self,amount_items):
-        print(self.kind_of_items, "в количестве", amount_items, "единиц")
+class pet_stern(pet_items):
+    def __init__(self, name_of_stern):
+        self.name_of_stern=name_of_stern
+
+class pet_drus(pet_items):
+    def __init__(self, name_of_drus):
+        self.name_of_drus=name_of_drus
+
+class pet_implements(pet_items):
+    def __init__(self, name_of_implements):
+        self.name_of_implements=name_of_implements
